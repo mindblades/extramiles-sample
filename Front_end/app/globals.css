@@ -1,0 +1,75 @@
+:root {
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+  --primary-rgb: 0, 51, 102;
+  --light-grey-rgb: 238, 238, 238;
+  --light-grey-foregrand-rgb: 187, 187, 187;
+  --dark-grey-rgb: 102, 102, 102;
+  --success-rgb: 76, 123, 37;
+  --font-family: arial,helvetica,sans-serif;
+}
+
+body {
+  color: rgb(var(--black-rgb));
+  background-color: rgb(var(--white-rgb));
+}
+.h2{
+  color: rgb(var(--primary-rgb));
+  font-family: var(--font-family);
+  font-size: 26px;
+  font-weight: bold;
+  padding: 0;
+  margin: 12px 0;
+}
+.p{
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+.panel {
+  background: rgb(var(--light-grey-rgb));
+  border: solid 1px rgb(var(--light-grey-foregrand-rgb));
+  padding: 5px;
+}
+.input{
+  border: 1px solid rgb(var(--primary-rgb));
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px  rgb(var(--dark-grey-rgb));
+  font-size: 16px;
+  background-color: rgb(var(--white-rgb));
+}
+.in-half {
+  width: 145px;
+}
+.in-dollar {
+  background-image: url('/images/dollar.svg');
+  background-position: left center;
+  background-repeat: no-repeat no-repeat;
+  padding-left: 11px;
+}
+.in-percentage {
+  background-image: url('/images/percentage.svg');
+  background-position: right center;
+  background-repeat: no-repeat no-repeat;
+  padding-right: 18px;
+}
+.calculate {
+  border: 0px;
+  color: #fff;
+  padding: 11px 50px 11px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgb(var(--success-rgb));
+  background-image: url('/images/play.svg');
+  background-repeat: no-repeat;
+}
+.clear {
+  border: 0px;
+  color: rgb(var(--white-rgb));
+  padding: 11px 8px;
+  font-size: 16px;
+  background: #ababab;
+}
+.clear:hover,
+.calculate:hover {
+  background-color: rgb(var(--dark-grey-rgb));
+}
